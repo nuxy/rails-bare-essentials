@@ -11,9 +11,11 @@
       "extensions": [
         "Arjun.swagger-viewer",
         "DavidAnson.vscode-markdownlint",
+        "hridoy.rails-snippets",
         "donjayamanne.githistory",
         "ms-vscode-remote.remote-containers",
-        "redhat.vscode-yaml"
+        "redhat.vscode-yaml",
+        "sorbet.sorbet-vscode-extension"
       ]
     }
   }

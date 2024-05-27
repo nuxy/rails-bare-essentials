@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "Arjun.swagger-viewer",
+    "DavidAnson.vscode-markdownlint",
+    "donjayamanne.githistory",
+    "hridoy.rails-snippets",
+    "ms-vscode-remote.remote-containers",
+    "redhat.vscode-yaml",
+    "sorbet.sorbet-vscode-extension"
+  ]
+}
