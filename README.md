@@ -15,6 +15,22 @@ A light-weight, slightly modified [Ruby on Rails](https://rubyonrails.org) proje
 
 In the VS Code _Command Palette_ choose "Open Folder in Container" which will launch the server in a Docker container allowing for realtime development and testing.
 
+## Known issues
+
+### Project files are assigned incorrect priviledges
+
+If you experience this when working between local/remote development environments this is due to the user UID [not being present during build time](https://github.com/microsoft/vscode-remote-release/issues/6834#issuecomment-1158600543). In this case the default `1000` is defined as both the UID/GID for the remote user.  You can override this behavior by updating the following project `devcontainer.json` build arguments or by exporting the UID/GID in your `.bash_profile`.
+
+```json
+"build": {
+  "dockerfile": "Dockerfile",
+  "args": {
+    "UID": "${localEnv:UID:1234}", // Default to 1234
+    "GID": "${localEnv:GID:1234}"
+  }
+},
+```
+
 ## License and Warranty
 
 This package is distributed in the hope that it will be useful, but without any warranty; without even the implied warranty of merchantability or fitness for a particular purpose.

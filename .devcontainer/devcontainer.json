@@ -1,11 +1,18 @@
 {
   "name": "rails-bare-essentials",
-  "image": "ruby:latest",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      "USER": "${localEnv:USER}",
+      "UID": "${localEnv:UID:1000}"
+      //"GROUP": "${localEnv:USER}",
+      //"GID": "${localEnv:GID:1000}"
+    }
+  },
   "forwardPorts": [3000],
+  "workspaceFolder": "/usr/src/app",
   "workspaceMount": "source=${localWorkspaceFolder},target=/usr/src/app,type=bind",
   "postCreateCommand": "bundle config set --local path 'vendor/bundle' && bundle install",
-  "postStartCommand": "sleep infinity",
-  "workspaceFolder": "/usr/src/app",
   "customizations": {
     "vscode": {
       "extensions": [
