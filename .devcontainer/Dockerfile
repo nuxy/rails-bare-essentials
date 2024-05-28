@@ -6,8 +6,12 @@ ARG GROUP=${USER}
 ARG UID
 ARG GID=${UID}
 
+# Install app dependencies.
+RUN gem install rails
+
+# Create shared workspace.
 RUN groupadd -g ${UID} ${USER}
-RUN useradd -u ${UID} -g ${GID} -G root -m ${USER}
+RUN useradd -u ${UID} -g ${GID} -G root -s /usr/bin/bash -m ${USER}
 RUN mkdir ${BASE_DIR}
 
 USER ${USER}
