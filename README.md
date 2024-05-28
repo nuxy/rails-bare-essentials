@@ -1,6 +1,6 @@
 # rails-bare-essentials
 
-A light-weight, slightly modified [Ruby on Rails](https://rubyonrails.org) project seed.
+A light-weight, slightly modified [Ruby on Rails](https://rubyonrails.org) project seed. :warning: Work In Progress :warning:
 
 ## Dependencies
 
