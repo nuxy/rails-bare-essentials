@@ -12,7 +12,7 @@ RUN gem install rails
 # Create shared workspace.
 RUN groupadd -g ${UID} ${USER}
 RUN useradd -u ${UID} -g ${GID} -G root -s /usr/bin/bash -m ${USER}
-RUN mkdir ${BASE_DIR}
+RUN mkdir ${BASE_DIR} && chown ${USER}:${GROUP} ${BASE_DIR}
 
 USER ${USER}
 

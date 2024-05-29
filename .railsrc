@@ -1,0 +1,15 @@
+--api
+--minimal
+--skip-docker
+--skip-keeps
+--skip-action-mailbox
+--skip-action-text
+--skip-active-job
+--skip-action-cable
+--skip-asset-pipeline
+--skip-hotwire
+--skip-jbuilder
+--skip-javascript
+--skip-dev-gems
+--skip-bundle
+--force

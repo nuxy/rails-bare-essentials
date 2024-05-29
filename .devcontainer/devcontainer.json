@@ -13,6 +13,7 @@
   "forwardPorts": [3000],
   "workspaceFolder": "/workspace",
   "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+  "onCreateCommand": "rails new ./ --rc=./.railsrc",
   "postCreateCommand": "bundle config set --local path 'vendor/bundle' && bundle install",
   "customizations": {
     "vscode": {
