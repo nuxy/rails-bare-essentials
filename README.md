@@ -25,6 +25,10 @@ Other benefits..
 - Ability to use a production ready container as my development baseline (example: [ECR amazonlinux](https://gallery.ecr.aws/amazonlinux/amazonlinux))
 - Running my application in an isolated with restricted permissions.
 
+## Customizing
+
+You can update this build to meet your requirements by updating the Rails [`.railsrc`](https://github.com/nuxy/rails-bare-essentials/blob/develop/.railsrc) and [application template](https://github.com/nuxy/rails-bare-essentials/blob/develop/template.rb). The changes in these files are only included during the [first time initialization](https://containers.dev/implementors/json_reference/#lifecycle-scripts) of a **new** container.
+
 ## Known issues
 
 ### Project files are assigned incorrect priviledges
