@@ -15,6 +15,16 @@ A light-weight, slightly modified [Ruby on Rails](https://rubyonrails.org) proje
 
 In the VS Code _Command Palette_ choose "Open Folder in Container" which will launch the server in a Docker container allowing for realtime development and testing.
 
+## Motivation
+
+To put it simply. **I do not like to pollute my loca machine with packages used for development**.
+
+Other benefits..
+
+- Integration of VS Code [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers) and related [extensions](https://marketplace.visualstudio.com/VSCode).
+- Ability to use a production ready container as my development baseline (example: [ECR amazonlinux](https://gallery.ecr.aws/amazonlinux/amazonlinux))
+- Running my application in an isolated with restricted permissions.
+
 ## Known issues
 
 ### Project files are assigned incorrect priviledges
