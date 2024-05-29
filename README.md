@@ -1,6 +1,6 @@
 # rails-bare-essentials
 
-A light-weight, slightly modified [Ruby on Rails](https://rubyonrails.org) project seed. :warning: Work In Progress :warning:
+A light-weight, slightly modified [Ruby on Rails](https://rubyonrails.org) project seed.
 
 ## Dependencies
 
@@ -17,7 +17,7 @@ In the VS Code _Command Palette_ choose "Open Folder in Container" which will la
 
 ## Motivation
 
-To put it simply. **I do not like to pollute my loca machine with packages used for development**.
+To put it simply. **I do not like to pollute my local machine with packages used for development**.
 
 Other benefits..
 
