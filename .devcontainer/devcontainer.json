@@ -2,6 +2,7 @@
   "name": "rails-bare-essentials",
   "build": {
     "dockerfile": "Dockerfile",
+    //"dockerfile": "Dockerfile.amazonlinux",
     "args": {
       "BASE_DIR": "/workspace",
       "USER": "${localEnv:USER}",
