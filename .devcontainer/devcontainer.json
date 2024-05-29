@@ -24,6 +24,7 @@
         "donjayamanne.githistory",
         "ms-vscode-remote.remote-containers",
         "redhat.vscode-yaml",
+        "rubocop.vscode-rubocop",
         "sorbet.sorbet-vscode-extension"
       ]
     }
