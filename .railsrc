@@ -13,3 +13,4 @@
 --skip-dev-gems
 --skip-bundle
 --force
+--template=template.rb
