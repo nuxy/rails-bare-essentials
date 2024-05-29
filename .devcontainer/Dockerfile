@@ -7,7 +7,7 @@ ARG UID
 ARG GID=${UID}
 
 # Install app dependencies.
-RUN gem install rails
+RUN gem install rails --version 7.0.8.3
 
 # Create shared workspace.
 RUN groupadd -g ${UID} ${USER}
