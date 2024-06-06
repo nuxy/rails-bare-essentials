@@ -11,6 +11,8 @@ RUN dnf -y install gcc git libyaml-devel make ruby-devel shadow-utils
 # Install app dependencies.
 RUN gem install rails --version 7.0.8.3
 
+ENV PATH="${PATH}:/usr/sbin"
+
 # Create shared workspace.
 RUN groupadd -g ${UID} ${USER}
 RUN useradd -u ${UID} -g ${GID} -G root -s /usr/bin/bash -m ${USER}
