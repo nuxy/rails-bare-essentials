@@ -11,10 +11,6 @@ A light-weight, slightly modified [Ruby on Rails](https://rubyonrails.org) proje
 
 - [Remote-Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
-## Launching in Remote-Containers
-
-In the VS Code _Command Palette_ choose "Open Folder in Container" which will launch the server in a Docker container allowing for realtime development and testing.
-
 ## Motivation
 
 To put it simply. **I do not like to pollute my local machine with packages used for development**.
@@ -25,6 +21,10 @@ Other benefits..
 - Ability to use a production ready container as my development baseline (example: [ECR amazonlinux](https://gallery.ecr.aws/amazonlinux/amazonlinux))
 - Running my application in an isolated environment with restricted permissions.
 - Knowing users that run this package will be developing in an environment that 100% mirrors my own.
+
+## Generating a new application
+
+In the VS Code _Command Palette_ choose "Open Folder in Container" which will create a new [Rails application](https://guides.rubyonrails.org/command_line.html#creating-a-rails-app) in a Docker container allowing for realtime development and testing.  This process effectively **replaces the current working directory** (this package) with dynamically generated application sources and related dependencies.
 
 ## Customizing
 
