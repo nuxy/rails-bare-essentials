@@ -17,5 +17,3 @@ RUN mkdir ${BASE_DIR} && chown ${USER}:${GROUP} ${BASE_DIR}
 USER ${USER}
 
 WORKDIR ${BASE_DIR}
-
-CMD sleep infinity
