@@ -10,4 +10,5 @@ gem_group :development, :test do
   gem 'sorbet'
   gem 'sorbet-runtime'
   gem 'tapioca'
+  gem 'watchman-rails'
 end
