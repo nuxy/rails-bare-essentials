@@ -8,4 +8,5 @@ gem_group :development, :test do
   gem 'rubocop'
   gem 'sorbet'
   gem 'sorbet-runtime'
+  gem 'tapioca'
 end
