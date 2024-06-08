@@ -17,7 +17,7 @@ To put it simply. **I do not like to pollute my local machine with packages used
 
 Other benefits..
 
-- Integration of VS Code [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers) and related [extensions](https://marketplace.visualstudio.com/VSCode).
+- Integration of VS Code [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers) and related [extensions](https://marketplace.visualstudio.com/VSCode) (e.g. [Ruby Sorbet](https://marketplace.visualstudio.com/items?itemName=sorbet.sorbet-vscode-extension), [Rails snippets](https://marketplace.visualstudio.com/items?itemName=hridoy.rails-snippets), etc..)
 - Ability to use a production ready container as my development baseline (example: [ECR amazonlinux](https://gallery.ecr.aws/amazonlinux/amazonlinux))
 - Running my application in an isolated environment with restricted permissions.
 - Knowing users that run this package will be developing in an environment that 100% mirrors my own.
