@@ -6,7 +6,7 @@ ARG GROUP=${USER}
 ARG UID
 ARG GID=${UID}
 
-RUN dnf -y install gcc git libyaml-devel make ruby-devel shadow-utils
+RUN dnf -y install gcc git libyaml-devel make ruby-devel shadow-utils watchman
 
 # Install app dependencies.
 RUN gem install rails --version 7.0.8.3

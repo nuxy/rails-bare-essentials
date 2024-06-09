@@ -6,6 +6,8 @@ ARG GROUP=${USER}
 ARG UID
 ARG GID=${UID}
 
+RUN apt-get update && apt-get install -y watchman
+
 # Install app dependencies.
 RUN gem install rails --version 7.0.8.3
 
