@@ -26,6 +26,8 @@ Other benefits..
 
 In the VS Code _Command Palette_ choose "Open Folder in Container" which will create a new [Rails application](https://guides.rubyonrails.org/command_line.html#creating-a-rails-app) in a Docker container allowing for realtime development and testing.  This process effectively **replaces the current working directory** (this package) with dynamically generated application sources and related dependencies.
 
+At this point it's suggested that you commit these sources to a Git repository.
+
 ## Customizing
 
 You can update this build to meet your requirements by updating the Rails [`.railsrc`](https://github.com/nuxy/rails-bare-essentials/blob/develop/.railsrc) and [application template](https://github.com/nuxy/rails-bare-essentials/blob/develop/template.rb). The changes in these files are only included during the [first time initialization](https://containers.dev/implementors/json_reference/#lifecycle-scripts) of a **new** container.
