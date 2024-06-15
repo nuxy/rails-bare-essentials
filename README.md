@@ -34,6 +34,10 @@ You can update this build to meet your requirements by updating the Rails [`.rai
 
 ## Known issues
 
+### VS Code crashes on large projects (> 1000 files)
+
+It has been observed in OSX, projects that contain thousands of files _may result_ with random application crashes. Based on the number of background tasks (e.g. [Ruby LSP](https://github.com/Shopify/ruby-lsp?tab=readme-ov-file#ruby-lsp), VS extensions) the frequency of these events increase exponentially. In cases like this I suggest you either upgrade your hardware to account for the slow IO performance or just use [Rubymine](https://www.jetbrains.com/ruby) and save yourself the headache down the road.
+
 ### Project files are assigned incorrect priviledges
 
 If you experience this when working between local/remote development environments this is due to the user UID [not being present during build time](https://github.com/microsoft/vscode-remote-release/issues/6834#issuecomment-1158600543). In this case the default `1000` is defined as both the UID/GID for the remote user.  You can override this behavior by updating the following project `devcontainer.json` build arguments or by exporting the UID/GID in your `.bash_profile`.
